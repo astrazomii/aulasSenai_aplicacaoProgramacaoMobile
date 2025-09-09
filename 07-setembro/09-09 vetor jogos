@@ -1,0 +1,25 @@
+const prompt = require("prompt-sync")()
+
+//Criando vetor já preenchido
+let jogos = ["GTA VI", "Roblox", "The Witcher", "Elden Ring", "FIFA", "Call of Duty", "Battlefield", "PUBG", "PES"]
+
+let meuJogo = prompt("Insira seu jogo: ")
+let existe = false
+
+for(let i = 0; i < jogos.length; i++){
+    if(jogos[i] == meuJogo){
+        existe = true
+        break
+    }
+}
+if(existe == true){
+    console.log("Jogo já existente na lista")
+}else{
+    jogos.push(meuJogo)
+    console.log("Jogo adicionado no vetor.")
+}
+console.log(jogos)
+
+//Remover item de uma posição específica
+jogos.splice(4,1)
+console.log(jogos)
