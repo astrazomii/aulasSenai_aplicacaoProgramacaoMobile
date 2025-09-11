@@ -1,0 +1,36 @@
+Guia para GitBash
+
+Verificar arquivos na lista:
+ls
+
+Cadastrar usuário GitHub no programa:
+git config --global user.name "seuusuario123"
+
+Cadastrar e-mail GitHub no programa:
+git config --global user.email "seuemail123.com"
+
+Verificar configurações cadastradas no programa:
+git config --list
+
+Inicializar repositório Git vazio:
+git init
+
+Verificar diretório do arquivo:
+ls -a
+
+Selecionar todas as pastas:
+git add .
+
+Enviar comite do arquivo no repositório:
+git commit -m "Meu primeiro commit"
+
+Renomear pasta mestre:
+git branch -M main
+
+Sincronizar programa com repositório no GitHub:
+git remote add origin https://github.com/astrazomii/aulasGenerica_Disciplina
+
+Enviar arquivo no repositório:
+git push -u origin main
+git push
+
